@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Data Binding </title>
+    <link rel="stylesheet" href="assets/css/mystyle.css">
+    <script src="https://unpkg.com/vue@next" defer></script>
+
+</head>
+
+<body>
+
+    <section id="info">
+
+        <!---Output your name-->
+        <h2> {{ myName }} </h2>
+
+        <!---Output your age-->
+        <p> Age: {{myAge}}</p>
+
+        <!---Output your age + 5 years -->
+        <p> Age in 5yrs: {{myAgeIn5yrs}}</p>
+
+        <!---Output random number (0-1)-->
+        <p> Favorite Number: {{myFavNum()}}</p>
+
+        <div>
+            <!---Display image found on internet-->
+            <img v-bind:src="imgLink">
+        </div>
+
+        <!---Prepopulate the input field with your name via "value attribute"-->
+        <input type="text" v-bind:value="myName">
+    </section>
+</body>
+<script src="assets/js/app.js" defer></script>
+
+</html>

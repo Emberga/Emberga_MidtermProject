@@ -1,0 +1,98 @@
+* {
+    box-sizing: border-box;
+}
+html {
+    font-family: Georgia, sans-serif;
+
+}
+
+body {
+    margin: auto;
+}
+
+section {
+    box-shadow: 0, 2px 8px rgba(0, 0, 0, 0.26);
+    margin: auto;
+    border-radius: 20px;
+    padding: 1rem;
+    text-align: center;
+    background-color: rgb(0, 128, 117);
+    width: 40%;
+    margin-top: 20px;
+}
+
+h1 {
+    
+    font-size: 30px;
+    color: black;
+    text-align: center;
+    background-color: rgb(0, 255, 200);
+    padding: 1rem;
+    border-radius: 20px;
+    margin: auto;
+    width: 40%;
+    margin-top: 40px;
+}
+
+#eventPractice {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+    margin: auto;
+    border-radius: 25px;
+    padding: 40px;
+    margin-top: 15px;
+    text-align: center;
+
+}
+
+ h2 {
+    font-size: 25px;
+    border-bottom: 4px solid rgb(0, 255, 200);
+    color: black;
+    margin: auto;
+    text-align: center;
+    margin-top: 0.25px;
+}
+
+ button {
+    font: Georgia, sans-serif;
+	font-weight: bold;
+    cursor: pointer;
+    background-color: rgb(0, 255, 200);
+    border-radius: 15px;
+	border-color: white;
+    padding: 10px;
+    color: black;
+    box-shadow: none;
+    margin: auto;
+    margin-top: 10px;
+    
+}
+
+button:hover,
+button:active {
+    background-color: white;
+    border-color: rgb(0, 255, 200);
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.26);
+
+}
+input {
+    font: inherit;
+    border: 1px solid rgb(0, 255, 200);
+}
+input:focus {
+    outline: none;
+    border-color: rgb(0, 255, 200);
+    background-color: white;
+}
+
+p {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: black;
+    background-color: rgb(0, 255, 200);
+    text-align: center;
+    padding: 0.5rem;
+    border-radius: 25px;
+    box-shadow: none;  
+}
+
