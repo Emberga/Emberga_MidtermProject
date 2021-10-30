@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Event Binding </title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://unpkg.com/vue@next" defer></script>
+    <script src="assets/js/app.js" defer></script>
+
+
+    <body>
+        <header>
+            <h1>Events</h1>
+        </header>
+
+        <section id="eventPractice">
+
+            <h2> Event Practice</h2>
+            <!-- 1 Show an alert(any text of your choice) when the buttom is pressed-->
+            <form v-on:submit.prevent="showAlert">
+                <button>Show Alert</button>
+                <hr/>
+                <br>
+            </form>
+            <!-- 2 Register the users input in "keydown" and output it in the paragraph (hint: event.target.value helps) ...-->
+            <input type="text" v-on:input="textInput">
+            <p>OUTPUT: {{name}}</p>
+            <br>
+            <hr/>
+            <!-- Repeat 2, but only output the entered value if the ENTER key is being pressed --->
+            <input type="text" v-on:keyup.enter="confirmInput">
+            <p>OUTPUT: {{confirmedName}} </p>
+        </section>
+</head>
+</body>
+
+</html>
